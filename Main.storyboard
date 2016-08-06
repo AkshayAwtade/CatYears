@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Xu-SF-a21">
+                                <rect key="frame" x="20" y="110" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2kE-cn-mJX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="TextFieldHumanAgeEdited:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="rRS-yz-qni"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykV-rc-RVy">
+                                <rect key="frame" x="263" y="40" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Human Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqF-kh-Gnw">
+                                <rect key="frame" x="30" y="80" width="134" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwR-RT-Vi4">
+                                <rect key="frame" x="40" y="161" width="520" height="30"/>
+                                <state key="normal" title="calculate Cat Years"/>
+                                <connections>
+                                    <action selector="buttonCalculateCatYearsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gtF-jq-jN7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Age in Cat Years is:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6T-M0-qqp">
+                                <rect key="frame" x="57" y="237" width="532" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pxe-hD-xWe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJY-ae-gFV">
+                                <rect key="frame" x="40" y="199" width="520" height="30"/>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="buttonCalculateCatYearsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XfO-IN-t1U"/>
+                                    <action selector="buttonResetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hB-PB-Sdq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74847198869999998" green="0.69587776639999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="i6T-M0-qqp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="3kw-gT-N0D"/>
+                            <constraint firstItem="hqF-kh-Gnw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="EMd-63-h5F"/>
+                            <constraint firstItem="1Xu-SF-a21" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="OT8-LO-kd8"/>
+                            <constraint firstItem="lwR-RT-Vi4" firstAttribute="top" secondItem="ykV-rc-RVy" secondAttribute="bottom" constant="100" id="Vpx-0b-gfK"/>
+                            <constraint firstItem="fJY-ae-gFV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xpn-E1-qNx"/>
+                            <constraint firstItem="lwR-RT-Vi4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YC8-X8-WbH"/>
+                            <constraint firstItem="fJY-ae-gFV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="179" id="biM-Yp-s9t"/>
+                            <constraint firstItem="ykV-rc-RVy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="khu-x2-f3h"/>
+                            <constraint firstItem="lwR-RT-Vi4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="kxw-n4-bs4"/>
+                            <constraint firstItem="1Xu-SF-a21" firstAttribute="top" secondItem="hqF-kh-Gnw" secondAttribute="bottom" constant="30" id="neO-Nd-B1K"/>
+                            <constraint firstItem="ykV-rc-RVy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sg6-Ce-2nd"/>
+                            <constraint firstItem="i6T-M0-qqp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tMu-rr-Hyd"/>
+                            <constraint firstItem="hqF-kh-Gnw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="v9L-9X-aS7"/>
+                            <constraint firstItem="1Xu-SF-a21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vgF-yl-ax5"/>
+                            <constraint firstItem="i6T-M0-qqp" firstAttribute="top" secondItem="lwR-RT-Vi4" secondAttribute="bottom" constant="63" id="vnK-oO-EFe"/>
+                            <constraint firstItem="1Xu-SF-a21" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zHu-jo-mRo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonCalculateCatYears" destination="lwR-RT-Vi4" id="5mj-nt-GMp"/>
+                        <outlet property="labelAnswer" destination="i6T-M0-qqp" id="WBO-xS-eVl"/>
+                        <outlet property="textFieldHumanAge" destination="1Xu-SF-a21" id="7zd-JO-Xva"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384" y="240"/>
+        </scene>
+    </scenes>
+</document>
