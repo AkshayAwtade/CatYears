@@ -1,14 +1,16 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CA1A22EA720B0A9A1BC657B124D8D2664B545A98",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7A7A03A446F625BD345CCC42628AC0F4334CDD62",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7A7A03A446F625BD345CCC42628AC0F4334CDD62" : 0,
     "CA1A22EA720B0A9A1BC657B124D8D2664B545A98" : 0,
     "62D229BF7133A3828380525ABFD1865FDCF4FCF6" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AB977C11-CDAE-4D56-A929-3E78F4AB8D2D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7A7A03A446F625BD345CCC42628AC0F4334CDD62" : "cat%20years\/",
     "CA1A22EA720B0A9A1BC657B124D8D2664B545A98" : "Catyears\/",
     "62D229BF7133A3828380525ABFD1865FDCF4FCF6" : "Catyears\/Catyears\/"
   },
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AkshayAwtade\/Cat-Years.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "62D229BF7133A3828380525ABFD1865FDCF4FCF6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AkshayAwtade\/CatYears.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7A7A03A446F625BD345CCC42628AC0F4334CDD62"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AkshayAwtade\/Cat-Years.git",
